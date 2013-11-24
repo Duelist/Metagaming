@@ -9,7 +9,6 @@
     var socket = io.connect('http://localhost');
 
     socket.on('receive-chat', function (data) {
-      console.log(data);
       var message_obj = data['message'];
       $('.chat-box').val([$('.chat-box').val(),'\n',[message_obj['user'],':',message_obj['message']].join(' ')].join(''));
     });

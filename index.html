@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+    <title>Metagaming</title>
+    <link rel="stylesheet" href="stylesheets/main.css">
+    <script src="static/modernizr/modernizr.js"></script>
+  </head>
+  <body>
+    <div class="row">
+      <div class="large-12 columns">
+        <div class="debug-wrapper">
+          Debug
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-9 columns">
+        <div class="chat-box-wrapper">
+          <textarea class="chat-box" disabled="disabled"></textarea>
+        </div>
+      </div>
+     <div class="large-3 columns">
+        <div class="user-list-wrapper">
+          <textarea class="user-list" disabled="disabled"></textarea>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="user-connect-wrapper">
+        <div class="large-3 columns">
+          <label>Username</label>
+          <input type="text" class="user-name" />
+        </div>
+        <div class="large-3 columns">
+          <button class="user-connect">Connect</button>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="chat-input-wrapper hide">
+        <div class="large-6 columns">
+          <input type="text" class="chat-input" placeholder="Chat here" />
+        </div>
+        <div class="large-3 columns">
+          <button class="chat-input-send">Send</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="/static/underscore/underscore-min.js"></script>
+  <script src="/static/jquery/jquery.min.js"></script>
+  <script src="/static/foundation/js/foundation.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/static/js/client.js"></script>
+</html>

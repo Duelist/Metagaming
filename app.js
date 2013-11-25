@@ -20,10 +20,6 @@ app.get('/', function(req, res) {
   res.sendfile(__dirname + '/index.html');
 });
 
-app.get('/old', function(req, res) {
-  res.sendfile(__dirname + '/index_old.html');
-});
-
 
 var usernames = [];
 var messages = [];

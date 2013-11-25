@@ -14,12 +14,6 @@ server.listen(3000);
 app.configure(function () {
   app.use('/static', express.static(__dirname + '/bower_components'));
   app.use('/static', express.static(__dirname + '/resources'));
-  app.use('/static', express.static(__dirname + '/stylesheets'));
-
-  /* temporary */
-  app.use('/bower_components', express.static(__dirname + '/bower_components'));
-  app.use('/js', express.static(__dirname + '/js'));
-  app.use('/stylesheets', express.static(__dirname + '/stylesheets'));
 });
 
 app.get('/', function(req, res) {

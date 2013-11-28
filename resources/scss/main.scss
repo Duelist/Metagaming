@@ -1,14 +1,9 @@
-@import "settings";
-@import "foundation";
-
-$chat-height: 300px;
+@import "_base";
 
 .debug-wrapper {
   padding-top: 5px;
   padding-bottom: 5px;
 }
-
-
 
 .chat-box {
   height: $chat-height;
